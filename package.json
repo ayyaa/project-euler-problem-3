@@ -1,0 +1,22 @@
+{
+  "name": "project-euler-problem-3",
+  "version": "1.0.0",
+  "description": "Largest Prime Factors",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayyaa/project-euler-problem-3.git"
+  },
+  "author": "tsurayya ats tsauri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayyaa/project-euler-problem-3/issues"
+  },
+  "homepage": "https://github.com/ayyaa/project-euler-problem-3#readme",
+  "devDependencies": {
+    "jest": "^22.2.2"
+  }
+}
