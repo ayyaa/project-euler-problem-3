@@ -1,41 +1,37 @@
-function isPrime(number) {
-  if (number === 2) {
+function isPrime(num) {
+  if (num === 2) {
     return true;
-  } else if (number % 2 === 0) {
+  } else if (num % 2 === 0) {
     return false;
   }
 
-  var y = Math.sqrt(number);
-  var x = Math.ceil(y);
+  var sq = Math.ceil(Math.sqrt(num));
 
-  for (var i = 3; i <= x; i+=2) {
-    if (number % i === 0) {
+  for (var i = 3; i <= sq; i+=2) {
+    if (num % i === 0) {
       return false;
     } 
   }
   return true;
 }
 
-function numMax(arrayNumber) {
-  var text = Math.max.apply(null,arrayNumber);
-  return text;
-}
 
-function largestPrimeFactors(number) {
+
+function largestPrimeFactors(num) {
   var arrayPrime =[],
-      boolean;
+      loopPrime;
 
-  for(i = 2; i < number; i++){
-    if (number % i===0) {
-      boolean = isPrime (i);
+  for(i = 2; i < num; i++){
+    if (num % i === 0) {
+      loopPrime = isPrime(i);
 
-      if (boolean === true) {
+      if (loopPrime === true) {
         arrayPrime.push(i);
       }
     }  
   }
-  var numPrime = arrayPrime; 
-  return numMax(numPrime);
+  var maxNumPrime = Math.max.apply(null, arrayPrime); 
+  return maxNumPrime;
 }
 
 module.exports = largestPrimeFactors;
