@@ -15,7 +15,7 @@ Untuk menjalankan test nya menggunakan command di bawah ini :
    npm test
 ```
 
-pastikan sudah terisntall `jest' ya. Jike belum terinstall jest silahkan mengikuti command ini 
+pastikan sudah terisntall `jest` ya. Jike belum terinstall jest silahkan mengikuti command ini 
 ```sh 
    npm install --save-dev jest
 ```
