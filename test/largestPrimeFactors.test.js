@@ -1,6 +1,11 @@
+const each = require('jest-each');
 const largestPrimeFactors = require('../src/largestPrimeFactors');
 
-test('largest prime factor from 13195 is 29', () => {
-  expect(largestPrimeFactors(13195)).toBe(29);
+each ([
+	[13195, 29],
+	[42, 7],
+	]).describe('.largestPrimeFactors(%s)',(a, expected) => {
+	test('return ${expected}', () => {
+		expect(largestPrimeFactors(a)).toBe(expected);
+	})
 })
-
