@@ -1,21 +1,21 @@
 # Project Euler Problem #3
 
-## Tentang Program
+## About
 
-Source code ini menyelesaikan permasalahan *project euler problem #3* dari link dibawah ini : 
+This source code solves the problem *project euler problem # 3* from the link below:
 > https://projecteuler.net/problem=3 
 
-- Problem ini mencari faktor prima terbesar dari suatu bilangan. 
-- Dikerjakan dengan menggunakan javasrcript dan 
-- Menggunakan Unit Test dengan `Jest`
+- This problem looks for the greatest prime factor of a number.
+- Work done using javascript and
+- Using unit test with `Jest`
 
-## Cara Testing Program 
-Untuk menjalankan test nya menggunakan command di bawah ini :
+## How to testing the program 
+To run the test using the command below:
 ```sh
    npm test
 ```
 
-pastikan sudah terisntall `jest` ya. Jike belum terinstall jest silahkan mengikuti command ini 
+make sure it is installed `jest`. If not already installed `jest` please follow this command
 ```sh 
    npm install --save-dev jest
 ```
